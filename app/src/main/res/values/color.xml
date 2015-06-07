@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="certificate_expired">#dd1919</color>
+    <color name="certificate_valid">#80ec19</color>
+</resources>

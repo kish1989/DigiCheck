@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@drawable/bg"
+    tools:context="com.example.kishan.digicheck3.BikeDetails">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_height="wrap_content"
+        android:stretchColumns="2"
+        android:layout_centerHorizontal="true">
+
+        <TableRow>
+            <TextView android:layout_weight=".5"
+                android:text="@string/bd_maker"
+                android:textSize="15dp"/>
+            <TextView android:id="@+id/bd_maker"/>
+        </TableRow>
+        <TableRow android:layout_marginTop="5dp">
+            <TextView android:layout_weight=".5"
+                android:text="@string/bd_type"
+                android:textSize="15dp"/>
+            <TextView android:id="@+id/bd_type"/>
+        </TableRow>
+        <TableRow android:layout_marginTop="5dp">
+            <TextView android:layout_weight=".5"
+                android:textSize="15dp"
+                android:text="@string/bd_chasis"/>
+            <TextView android:id="@+id/bd_chasis"/>
+        </TableRow>
+        <TableRow android:layout_marginTop="5dp">
+            <TextView android:layout_weight=".5"
+                android:textSize="15dp"
+                android:text="@string/bd_engine"/>
+            <TextView android:id="@+id/bd_engine"/>
+        </TableRow>
+        <TableRow android:layout_marginTop="5dp">
+            <TextView android:layout_weight=".5"
+                android:textSize="15dp"
+                android:text="@string/bd_ftype"/>
+            <TextView android:id="@+id/bd_ftype"/>
+        </TableRow>
+        <TableRow android:layout_marginTop="5dp">
+            <TextView android:layout_weight=".5"
+                android:textSize="15dp"
+                android:text="@string/bd_cc"/>
+            <TextView android:id="@+id/bd_cc"/>
+        </TableRow>
+        <TableRow android:layout_marginTop="5dp">
+            <TextView android:layout_weight=".5"
+                android:textSize="15dp"
+                android:text="@string/bd_wb"/>
+            <TextView android:id="@+id/bd_wb"/>
+        </TableRow>
+        <TableRow android:layout_marginTop="5dp">
+            <TextView android:layout_weight=".5"
+                android:textSize="15dp"
+                android:text="@string/bd_weight"/>
+            <TextView android:id="@+id/bd_weight"/>
+        </TableRow>
+        <TableRow android:layout_marginTop="5dp">
+            <TextView android:layout_weight=".5"
+                android:textSize="15dp"
+                android:text="@string/bd_color"/>
+            <TextView android:id="@+id/bd_color"/>
+        </TableRow>
+    </TableLayout>
+
+</RelativeLayout>

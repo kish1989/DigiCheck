@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@drawable/bg"
+    tools:context="com.example.kishan.digicheck3.PollutionCertificate">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pc_title"
+        android:text="@string/pc_title"
+        android:textSize="25dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TableLayout
+        android:id="@+id/pc_maintable"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_height="wrap_content"
+        android:stretchColumns="2"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/pc_title">
+
+        <TableRow>
+            <TextView android:layout_weight=".5"
+                android:textSize="15dp"
+                android:text="@string/pc_regno"/>
+            <TextView android:id="@+id/pc_regno"/>
+        </TableRow>
+        <TableRow>
+            <TextView android:layout_weight=".5"
+                android:textSize="15dp"
+                android:text="@string/pc_pts"/>
+            <TextView android:id="@+id/pc_pts"/>
+        </TableRow>
+        <TableRow>
+            <TextView android:layout_weight=".5"
+                android:textSize="15dp"
+                android:text="@string/pc_eor"/>
+            <TextView android:id="@+id/pc_eor"/>
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="15dp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/pc_testtitle"
+        android:layout_below="@+id/pc_maintable"
+        android:text="@string/pc_testtitle"/>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:stretchColumns="2"
+        android:layout_below="@+id/pc_testtitle">
+
+    <TableRow>
+        <TextView android:textSize="15dp"
+            android:text="@string/pc_reg" android:layout_weight=".5"/>
+        <TextView android:textSize="15dp"
+            android:text="@string/pc_act"/>
+    </TableRow>
+    <TableRow android:layout_marginTop="5dp">
+        <TextView android:id="@+id/pc_hcreg" android:layout_weight=".5"/>
+        <TextView android:id="@+id/pc_hcact"/>
+    </TableRow>
+    <TableRow android:layout_marginTop="5dp">
+        <TextView android:id="@+id/pc_coreg" android:layout_weight=".5"/>
+        <TextView android:id="@+id/pc_coact"/>
+    </TableRow>
+    </TableLayout>
+</RelativeLayout>
